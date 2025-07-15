@@ -1,0 +1,235 @@
+* {
+  margin: 0px;
+  padding: 0px;
+
+}
+
+html {
+  text-size-adjust: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+.header {
+  background-image: url(fimg/b2.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  height: 880px;
+  width: 1513px;
+  margin-top: -30px;
+  position: relative;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  display: inline-flex;
+  position: relative;
+  top: 65px;
+  left: 70px;
+  block-size: auto;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  border: none;
+
+
+}
+
+.brand {
+  font-size: 50px;
+  font-family: "Agu Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 0;
+  font-variant: small-caps;
+  display: inline-flex;
+  position: relative;
+  left: 54px;
+  top: 55px;
+  color: white;
+}
+
+.simg1 {
+  top: 300px;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  left: -200px;
+  rotate: 270deg;
+}
+
+.simg2 {
+  top: 400px;
+  height: 450px;
+  width: 250px;
+  position: absolute;
+  right: 0px;
+}
+
+.bimg {
+  margin-left: 30%;
+  margin-top: 210px;
+
+}
+
+
+.menu {
+  align-items: center;
+}
+
+.menu,
+li {
+
+  display: flex;
+  position: relative;
+  z-index: 2;
+  justify-content: flex-end;
+  margin-right: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 22px;
+  font-style: normal;
+  text-align: center;
+}
+
+
+
+.signin {
+  background-color: black;
+  color: white;
+  border-radius: 18px;
+  height: 53px;
+  display: inline-block;
+  border: none;
+  width: 146px;
+  align-content: center;
+  font-weight: 800;
+  transition: box-shadow 0.3s;
+}
+
+.App {
+  background-color: black;
+  color: white;
+  border-radius: 18px;
+  height: 53px;
+  display: inline-block;
+  border: none;
+  width: 146px;
+  align-content: center;
+  font-weight: 800;
+  transition: box-shadow 0.3s;
+}
+
+.home,
+.food,
+.restaurants {
+  
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 18px;
+  height: 50px;
+  width: 146px;
+  display: inline-block;
+  border-color: white;
+  align-content: center;
+  font-weight: 800;
+  transition: box-shadow 0.3s;
+}
+
+.home{
+  
+  scroll-padding-top: -900px;
+  scroll-behavior: smooth;
+}
+
+
+
+.home:hover,
+.food:hover,
+.restaurants:hover,
+.App:hover,
+.signin:hover {
+  image-rendering: optimizeQuality;
+  /*used for that zoom eft smoothing and high quality*/
+  color: white;
+  cursor: pointer;
+  width: 146px;
+  max-width: 14rem;
+  transform: scale(1.1);
+  box-shadow: -5px -5px 23px yellow, 5px 5px 23px black;
+}
+
+.slogam {
+  position: relative;
+  z-index: 1;
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  padding-left: 12px;
+  color: white;
+  top: 110px;
+  width: 80%;
+
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  position: relative;
+  width: 600px;
+  top: 150px;
+  margin: 0 auto;
+
+}
+
+.searchbar {
+  height: 60px;
+  width: 600px;
+  padding: 12px 45px 12px 15px;
+  position: absolute;
+  border-radius: 18px;
+  border: none;
+  font-size: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  top: 50%;
+  outline: none;
+}
+
+
+.searchicon {
+  position: absolute;
+  right: 70px;
+  top: 80%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.3s, color 0.3s;/*used for hover circle*/
+}
+
+.searchicon:active {
+  background-color: gray;
+  color: white;
+}
