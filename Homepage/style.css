@@ -39,7 +39,7 @@ nav {
   width: 50px;
   display: inline-flex;
   position: relative;
-  top: 65px;
+  top: 32px;
   left: 70px;
   block-size: auto;
   background-color: rgb(0, 0, 0);
@@ -61,7 +61,7 @@ nav {
   display: inline-flex;
   position: relative;
   left: 54px;
-  top: 55px;
+  top: 20px;
   color: white;
 }
 
@@ -91,6 +91,7 @@ nav {
 
 .menu {
   align-items: center;
+  top: -35px;
 }
 
 .menu,
