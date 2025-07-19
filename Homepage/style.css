@@ -13,9 +13,9 @@ a {
   text-decoration: none;
 }
 
-
-
-
+a:hover {
+  color: black;
+}
 
 .header {
   background-image: url(fimg/b2.jpg);
@@ -75,9 +75,9 @@ nav {
 }
 
 .simg2 {
-  top: 400px;
-  height: 450px;
-  width: 250px;
+  top: 500px;
+  height: 400px;
+  width: 400px;
   position: absolute;
   right: 0px;
 }
@@ -141,7 +141,7 @@ li {
 .home,
 .food,
 .restaurants {
-  
+
   background-color: transparent;
   border: 2px solid white;
   color: white;
@@ -155,9 +155,7 @@ li {
   transition: box-shadow 0.3s;
 }
 
-.home{
-  
-  scroll-padding-top: -900px;
+.home {
   scroll-behavior: smooth;
 }
 
@@ -177,6 +175,7 @@ li {
   transform: scale(1.1);
   box-shadow: -5px -5px 23px yellow, 5px 5px 23px black;
 }
+
 
 .slogam {
   position: relative;
@@ -227,10 +226,90 @@ li {
   padding: 12px;
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
-  transition: background-color 0.3s, color 0.3s;/*used for hover circle*/
+  transition: background-color 0.3s, color 0.3s;
+  /*used for hover circle*/
 }
 
-.searchicon:active {
-  background-color: gray;
-  color: white;
+.searchicon:hover {
+  background-color: 00000000000.rgb(181, 180, 180);
+
+}
+
+/*------------------------------------------------------FOOD page------------------------------------------------------------------------------*/
+
+.scrolltofood {
+
+  top: 500px;
+
+}
+
+.flipcards {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  transition: opacity 0.3s ease;
+
+}
+
+.card:hover img {
+  display: none;
+  opacity: 0px;
+
+}
+
+.card h3,
+.card p {
+  display: none;
+  margin: 5px 0;
+ 
+
+}
+
+.card:hover h3,
+.card:hover p {
+  display: block;
+  transition-duration: 2s;
+  overflow: hidden;
+  
+
+}
+
+h1 {
+  text-align: center;
+}
+
+
+
+.card {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 3s;
+  cursor: pointer;
+  box-shadow: 10px 15px 20px rgba(0, 0, 0, 0), -5px -10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+  background-color: transparent;
+}
+
+
+
+.card h3,
+.card p,
+{
+   position: absolute;
+   transform: translate(-50%, -50%);
+
 }
