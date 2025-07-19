@@ -306,10 +306,5 @@ h1 {
 
 
 
-.card h3,
-.card p,
-{
-   position: absolute;
-   transform: translate(-50%, -50%);
 
-}
+
