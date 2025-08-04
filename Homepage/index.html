@@ -6,6 +6,9 @@
     <title>Foodie</title>
     <link class="icon" rel="icon" href="fimg/ficon2-removebg-preview.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="food.css">
+
+
 
     <div class="fonts">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +17,10 @@
             href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Boldonse&family=Josefin+Sans:wght@700&display=swap">
 
         <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
     </div>
 
+</head>
 
 <body>
     <div class="header">
@@ -28,9 +32,9 @@
 
 
             <ul class="menu">
-                <li class="home"><a href="#Home">Home</a></li>
+                <li><a class="home" href="#Home">Home</a></li>
 
-                <li class="food"><a href="#Food">Food</a></li>
+                <li><a class="food" href="#Food">Food</a></li>
 
                 <li class="restaurants">Restaurants on Dineout</li>
 
@@ -46,7 +50,7 @@
             </center>
 
             <div class="search">
-                <input class="searchbar" type="type" placeholder="search">
+                <input class="searchbar" type="text" placeholder="search">
                 <span class="material-symbols-outlined searchicon">search</span>
             </div>
 
@@ -65,67 +69,166 @@
     <br><br><br><br>
 
 
+    <section id="Food" class="Food-section">
+
+        <div class="food-item">
+
+            <div class="foodimg">
+                <img src="fimg/foods/meals.png" alt="f1">
+                <h2>Meals</h2>
+
+                <div class="add">
+                    <button class="add-btns" type="button" id="decrease">-</button>
+                    <input class="add-ip" type="number" id="add-ip" value="0">
+                    <button class="add-btns" type="button" id="increase">+</button>
+                </div>
 
 
-    <div>
-        <section class="scrolltofood" id="Food">
-            <Center>
-                <h1>Food</h1>
-            </Center>
-            <div class="flipcards">
 
-            <div class="card">
-                <img src="fimg/chicken briyani.png" alt="briyani">
-                <div class="fcard1"><h3>briyani</h3></div>
-                <div class="bcard1">
-                    <p>1000/-</p>
+            </div>
+
+            <div class="foodimg">
+                <img src="fimg/foods/bowl-of-traditional-indian-chicken-curry-with-basmati-rice_.png" alt="f1">
+                <h2>chicken curry meal</h2>
+
+                <div class="add">
+                    <button class="add-btns" type="button" id="decrease">-</button>
+                    <input class="add-ip" type="number" id="add-ip" value="0">
+                    <button class="add-btns" type="button" id="increase">+</button>
                 </div>
             </div>
 
-              <div class="card">
-                <img src="fimg/cryspi chicken.png" alt="kfc">
-                <div class="fcard2"><h3>cryspi chicken</h3>
-                <p>1000/-</p>
+            <div class="foodimg">
+                <img src="fimg/foods/spicy-chicken-tikka-masala-with-basmati-rice-and-naan_.png" alt="f1">
+                <h2>chicken tikka meal</h2>
+
+                <div class="add">
+                    <button class="add-btns" type="button" id="decrease">-</button>
+                    <input class="add-ip" type="number" id="add-ip" value="0">
+                    <button class="add-btns" type="button" id="increase">+</button>
                 </div>
+            </div>
+
+            <div class="foodimg">
+                <img src="fimg/foods/bowl-of-vietnamese-pho-with-sliced-beef-rice-noodles.png" alt="f1">
+                <h2>Beef rice noodles</h2>
                 
-                    
-            </div>
-
-          
-
-            <div class="card">
-                <img src="fimg/meals.png" alt="meals">
-                <h1>MEALS</h1>
-                <div class="fcard3"><h3>meals</h3></div>
-                <div class="bcard3">
-                    <p>1000/-</p>
+                <div class="add">
+                    <button class="add-btns" type="button" id="decrease">-</button>
+                    <input class="add-ip" type="number" id="add-ip" value="0">
+                    <button class="add-btns" type="button" id="increase">+</button>
                 </div>
             </div>
 
-            <div class="card">
-                <img src="fimg/naan.png" alt="naan">
-                <div class="fcard4"><h3>naan</h3></div>
-                <div class="bcard4">
-                    <p>1000/-</p>
+            <div class="foodimg">
+                <img src="fimg/foods/—Pngtree—indian street food pani puri_20349512.png" alt="f1">
+                <h2>Pani puri</h2>
+
+                <div class="add">
+                    <button class="add-btns" type="button" id="decrease">-</button>
+                    <input class="add-ip" type="number" id="add-ip" value="0">
+                    <button class="add-btns" type="button" id="increase">+</button>
                 </div>
             </div>
 
-            <div class="card">
-                <img src="fimg/sweets.png" alt="sweets">
-                <div class="fcard5"><h3>sweet</h3></div>
-                <div class="bcard5">
-                    <p>1000/-</p>
+            <div class="foodimg">
+                <img src="fimg/foods/naan.png" alt="f1">
+                <h2>Naan</h2>
+
+                <div class="add">
+                    <button class="add-btns" type="button" id="decrease">-</button>
+                    <input class="add-ip" type="number" id="add-ip" value="0">
+                    <button class="add-btns" type="button" id="increase">+</button>
                 </div>
             </div>
-</div>
+
+            <div class="foodimg">
+                <img src="fimg/foods/vecteezy_a-basket-of-chapati-or-indian-flat-bread-isolated-on-a_46380745.png"
+                    alt="f1">
+                <h2>Chapati</h2>
+
+                <div class="add">
+                    <button class="add-btns" type="button" id="decrease">-</button>
+                    <input class="add-ip" type="number" id="add-ip" value="0">
+                    <button class="add-btns" type="button" id="increase">+</button>
+                </div>
+            </div>
+
+            <div class="foodimg">
+                <img src="fimg/foods/vecteezy_dosa-against-transparent-background_47825342.png" alt="f1">
+                <h2>Dosa</h2>
+
+                <div class="add">
+                    <button class="add-btns" type="button" id="decrease">-</button>
+                    <input class="add-ip" type="number" id="add-ip" value="0">
+                    <button class="add-btns" type="button" id="increase">+</button>
+                </div>
+            </div>
+
+            <div class="foodimg">
+                <img src="fimg/foods/vecteezy_idli-steamed-rice-and-lentil-cakes_45593557.png" alt="f1">
+                <h2>Idly</h2>
+
+                <div class="add">
+                    <button class="add-btns" type="button" id="decrease">-</button>
+                    <input class="add-ip" type="number" id="add-ip" value="0">
+                    <button class="add-btns" type="button" id="increase">+</button>
+                </div>
+            </div>
+
+            <div class="foodimg">
+                <img src="fimg/foods/vecteezy_freshly-cooked-flatbreads-on-plate-displayed-for-delicious_58268468.png"
+                    alt="f1">
+                <h2>poori</h2>
+
+                <div class="add">
+                    <button class="add-btns" type="button" id="decrease">-</button>
+                    <input class="add-ip" type="number" id="add-ip" value="0">
+                    <button class="add-btns" type="button" id="increase">+</button>
+                </div>
+            </div>
+
+             <div class="foodimg">
+                <img src="fimg/foods/bowl-of-traditional-indian-chicken-curry-with-basmati-rice_.png" alt="f1">
+                <h2>chicken curry meal</h2>
+
+                <div class="add">
+                    <button class="add-btns" type="button" id="decrease">-</button>
+                    <input class="add-ip" type="number" id="add-ip" value="0">
+                    <button class="add-btns" type="button" id="increase">+</button>
+                </div>
+            </div>
+
+             <div class="foodimg">
+                <img src="fimg/foods/bowl-of-traditional-indian-chicken-curry-with-basmati-rice_.png" alt="f1">
+                <h2>chicken curry meal</h2>
+
+                <div class="add">
+                    <button class="add-btns" type="button" id="decrease">-</button>
+                    <input class="add-ip" type="number" id="add-ip" value="0">
+                    <button class="add-btns" type="button" id="increase">+</button>
+                </div>
+            </div>
+
+             <div class="foodimg">
+                <img src="fimg/foods/bowl-of-traditional-indian-chicken-curry-with-basmati-rice_.png" alt="f1">
+                <h2>chicken curry meal</h2>
+
+                <div class="add">
+                    <button class="add-btns" type="button" id="decrease">-</button>
+                    <input class="add-ip" type="number" id="add-ip" value="0">
+                    <button class="add-btns" type="button" id="increase">+</button>
+                </div>
+            </div>
+            
 
 
 
+        </div>
+    </section>
 
-
-        </section>
-    </div>
-
+    <script src="script.js"></script>
 </body>
+
 
 </html>

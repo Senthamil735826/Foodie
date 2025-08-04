@@ -4,9 +4,7 @@
 
 }
 
-html {
-  text-size-adjust: 100%;
-}
+
 
 a {
   color: white;
@@ -99,7 +97,7 @@ li {
 
   display: flex;
   position: relative;
-  z-index: 2;
+  z-index: 5;
   justify-content: flex-end;
   margin-right: 30px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -109,8 +107,6 @@ li {
   font-style: normal;
   text-align: center;
 }
-
-
 
 .signin {
   background-color: black;
@@ -230,81 +226,14 @@ li {
   /*used for hover circle*/
 }
 
-.searchicon:hover {
-  background-color: 00000000000.rgb(181, 180, 180);
+.searchicon:active {
+  background-color: rgb(181, 180, 180);
+
 
 }
 
-/*------------------------------------------------------FOOD page------------------------------------------------------------------------------*/
-
-.scrolltofood {
-
-  top: 500px;
-
+image {
+  position: absolute;
+  z-index: inherit;
 }
-
-.flipcards {
-  display: flex;
-  gap: 30px;
-  justify-content: space-around;
-
-}
-
-.card img {
-  width: 200px;
-  height: 200px;
-  display: block;
-  transition: opacity 0.3s ease;
-
-}
-
-.card:hover img {
-  display: none;
-  opacity: 0px;
-
-}
-
-.card h3,
-.card p {
-  display: none;
-  margin: 5px 0;
- 
-
-}
-
-.card:hover h3,
-.card:hover p {
-  display: block;
-  transition-duration: 2s;
-  overflow: hidden;
-  
-
-}
-
-h1 {
-  text-align: center;
-}
-
-
-
-.card {
-  width: 200px;
-  height: 300px;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 3s;
-  cursor: pointer;
-  box-shadow: 10px 15px 20px rgba(0, 0, 0, 0), -5px -10px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  border: 2px solid rgb(0, 0, 0);
-}
-
-.card:hover {
-  transform: rotateY(180deg);
-  background-color: transparent;
-}
-
-
-
-
 

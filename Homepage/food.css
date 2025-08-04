@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.food-section {
+    height: 100%;
+    width: 100%;
+}
+
+.Food-item {
+    position: relative;
+    height: 325px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap: 5px;
+    row-gap: 25px;
+    border: none;
+    padding: 20px;
+    overflow-y: scroll;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.475);
+    border-radius: 16px;
+}
+
+.Food-item::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 10px;
+}
+
+
+.foodimg {
+    position: relative;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 23px rgb(162, 162, 162);
+}
+
+.foodimg:hover {
+
+    transform: scale(1.1);
+}
+
+
+.foodimg img {
+    position: relative;
+    width: 200px;
+}
+
+.add {
+    position: relative;
+    display: inline-block;
+    gap: 1px;
+    border: 2px solid rgb(255, 255, 255);
+    top: 55px;
+    background-color: lightgray;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 23px rgb(162, 162, 162);
+
+
+}
+
+
+.add-btns {
+    border: none;
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 0px;
+    margin: 1px;
+
+}
+
+
+
+#increase:active {
+    background-color: gray;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 5px 5px 23px rgb(0, 0, 0);
+
+}
+
+#decrease:active {
+    background-color: gray;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 5px 5px 23px rgb(0, 0, 0);
+
+}
+
+#add-ip {
+    height: 30px;
+    width: 30px;
+    background-color: lightgray;
+    border: transparent;
+}
+
+#add-ip:focus {
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.add-btn {
+    height: 30px;
+    width: 80px;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    text-align: center;
+    border: 0.5px solid orangered;
+    background-color: white;
+    width: 40px;
+}
