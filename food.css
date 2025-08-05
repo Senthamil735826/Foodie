@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#Food{
+    position: relative;
+    top: 5%;
+    scroll-behavior: smooth;
+    scroll-snap-type:y proximity;
+    scroll-padding-top: 0%;
+}
+
+.ads{
+    width: 90%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    left: 30px;
+    right: 30%;
+   
+}
+
+.ads-loop{
+    width: fit-content;
+    display: flex;
+    gap: 1rem;
+    animation: loop 10s linear infinite;
+    align-items: end;
+    
+   
+}
+
+.advisement{
+    height: 150px;
+    width: 300px;
+    display: flex;
+    align-items: flex-end;
+    gap: 0 0.2rem;
+    color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0.1rem 0.2rem #c8000033,
+    0 0.1rem 0.5rem #0000004d,
+    0 0.2rem 1.5rem #0000005d;
+}
+
+.advisement span {
+    font-size: 1.2rem;
+    color: #006aff;
+
+}
+
+.fade{
+    position: absolute;
+    background: linear-gradient(90deg, transparent 30%, transparent 70% );
+    inset: 0;
+    pointer-events: none;
+}
+
+@keyframes loop{
+    0%{
+        transform: translateX(0%);
+    }
+
+    100%{
+        transform: translateX(-100%) ;
+    }
+}
+
+
+#adv-1{
+    background: url(fimg/fbackgroud.jpg);
+    background-size: cover;
+}
+
+#adv-2{
+    background: url(fimg/b2.jpg);
+    background-size: cover;
+}
+
+#adv-3{
+    background: url(fimg/b3.jpg);
+    background-size: cover;
+    
+}
+
+#adv-4{
+    background: url(fimg/bg4.jpg);
+    background-size: cover;
+}
+
+#adv-5{
+    background: url(fimg/bg5.jpg);
+    background-size: cover;
+}
+
+#adv-6{
+    background: url(fimg/bg6.jpg);
+    background-size: cover;
+}
+
+#adv-7{
+    background: url(fimg/bg7.jpg);
+    background-size: cover;
+}
+
+#adv-8{
+    background: url(fimg/bg8.jpg);
+    background-size: cover;
+}
+
+#adv-9{
+    background: url(fimg/bg9.jpg);
+    background-size: cover;
+}
+
+#adv-10{
+    background: url(fimg/bg10.jpg);
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+.food-section {
+    height: 100%;
+    width: 100%;
+}
+
+.Food-item {
+    position: relative;
+    height: 325px;
+    top: 20%;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap: 5px;
+    row-gap: 25px;
+    border: none;
+    padding: 20px;
+    overflow-y: scroll;
+   
+}
+
+.Food-item::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 10px;
+}
+
+
+.foodimg {
+    position: relative;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow:5px 5px 23px rgb(162, 162, 162);
+}
+
+.foodimg:hover {
+
+   transform: scale(1.07);
+   transition: transform 0.2s ease;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.475);  
+}
+
+
+.foodimg img {
+    position: relative;
+    width: 200px;
+}
+
+
+.add {
+    position: relative;
+    display: inline-block;
+    gap: 1px;
+    border: 2px solid rgb(255, 255, 255);
+    top: 55px;
+    background-color: lightgray;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 23px rgb(162, 162, 162);
+
+
+}
+
+
+.add-btns-decrease {
+    border: none;
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 0px;
+    margin: 1px;
+
+}
+
+.add-btns-increase {
+    border: none;
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 0px;
+    margin: 1px;
+
+}
+
+
+
+.add-btns-increase:active{
+    background-color: gray;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 5px 5px 23px rgb(0, 0, 0);
+
+}
+
+.add-btns-decrease:active {
+    background-color: gray;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 5px 5px 23px rgb(0, 0, 0);
+
+}
+
+.add-ip {
+    height: 30px;
+    width: 30px;
+    background-color: lightgray;
+    border: transparent;
+}
+
+.add-ip:focus {
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
