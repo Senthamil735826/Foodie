@@ -3,35 +3,35 @@
     padding: 0;
 }
 
-#Food{
+#Food {
     position: relative;
     top: 5%;
     scroll-behavior: smooth;
-    scroll-snap-type:y proximity;
+    scroll-snap-type: y proximity;
     scroll-padding-top: 0%;
 }
 
-.ads{
+.ads {
     width: 90%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
     overflow: hidden;
     left: 30px;
     right: 30%;
-   
+
 }
 
-.ads-loop{
+.ads-loop {
     width: fit-content;
     display: flex;
     gap: 1rem;
-    animation: loop 10s linear infinite;
+    animation: scroll 20s linear infinite;
     align-items: end;
-    
-   
+
+
 }
 
-.advisement{
+.advisement {
     height: 150px;
     width: 300px;
     display: flex;
@@ -42,81 +42,85 @@
     padding: 0.7rem 1rem;
     border-radius: 0.4rem;
     box-shadow: 0 0.1rem 0.2rem #c8000033,
-    0 0.1rem 0.5rem #0000004d,
-    0 0.2rem 1.5rem #0000005d;
+        0 0.1rem 0.5rem #0000004d,
+        0 0.2rem 1.5rem #0000005d;
+    
 }
 
 .advisement span {
     font-size: 1.2rem;
     color: #006aff;
 
+
 }
 
-.fade{
+.fade {
     position: absolute;
-    background: linear-gradient(90deg, transparent 30%, transparent 70% );
+    background: linear-gradient(90deg, transparent 30%, transparent 70%);
     inset: 0;
     pointer-events: none;
 }
 
-@keyframes loop{
-    0%{
+@keyframes scroll {
+    from {
         transform: translateX(0%);
     }
 
-    100%{
-        transform: translateX(-100%) ;
+    to {
+        transform: translateX(-50%);
     }
+
+    
 }
 
 
-#adv-1{
+#adv-1 {
     background: url(fimg/fbackgroud.jpg);
     background-size: cover;
 }
 
-#adv-2{
+#adv-2 {
     background: url(fimg/b2.jpg);
     background-size: cover;
 }
 
-#adv-3{
+#adv-3 {
     background: url(fimg/b3.jpg);
     background-size: cover;
-    
+
 }
 
-#adv-4{
+#adv-4 {
     background: url(fimg/bg4.jpg);
     background-size: cover;
 }
 
-#adv-5{
+#adv-5 {
     background: url(fimg/bg5.jpg);
     background-size: cover;
 }
 
-#adv-6{
+#adv-6 {
     background: url(fimg/bg6.jpg);
     background-size: cover;
 }
 
-#adv-7{
+#adv-7 {
     background: url(fimg/bg7.jpg);
     background-size: cover;
 }
 
-#adv-8{
+#adv-8 {
     background: url(fimg/bg8.jpg);
     background-size: cover;
 }
 
-#adv-9{
+#adv-9 {
     background: url(fimg/bg9.jpg);
     background-size: cover;
 }
 
-#adv-10{
+#adv-10 {
     background: url(fimg/bg10.jpg);
     background-size: cover;
 }
@@ -147,7 +151,7 @@
     border: none;
     padding: 20px;
     overflow-y: scroll;
-   
+
 }
 
 .Food-item::-webkit-scrollbar-track {
@@ -163,14 +167,14 @@
     height: 300px;
     margin: 10px;
     border-radius: 10px;
-    box-shadow:5px 5px 23px rgb(162, 162, 162);
+    box-shadow: 5px 5px 23px rgb(162, 162, 162);
 }
 
 .foodimg:hover {
 
-   transform: scale(1.07);
-   transition: transform 0.2s ease;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.475);  
+    transform: scale(1.07);
+    transition: transform 0.2s ease;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.475);
 }
 
 
@@ -228,7 +232,7 @@
 
 
 
-.add-btns-increase:active{
+.add-btns-increase:active {
     background-color: gray;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
@@ -260,5 +264,3 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-
-
